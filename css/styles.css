@@ -1,0 +1,143 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+/* ----- Fuente ----- */
+*{
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* ----- Variables ----- */
+:root{
+    /* ### Colores primarios */
+--Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+
+/* ### Colores neutrales */
+--Dark-gray: hsl(0, 0%, 59%);
+
+}
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+body{
+    background-color: var(--Dark-cyan);
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.bg-bottom {
+    position: absolute;
+    bottom: -425px;
+    right: -820px;
+  }
+  
+.bg-top {
+    position: absolute;
+    top: -420px;
+    left: -820px;
+}
+
+.card_header{
+    background-image: url(../images/bg-pattern-card.svg);
+    height: 150px;
+}
+.card{
+    width: 300px;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.03);
+}
+
+.foto{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 100px;    
+    border-radius: 50%;
+    border: 6px solid white;
+}
+
+.card_body{
+    margin-top: 80px;
+}
+
+h1{
+    font-size: 1rem;
+}
+
+.age, .location{
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+
+.location{
+    font-size: 15px;
+}
+.card_footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-top: 1px solid rgb(188, 187, 187);
+    padding-top: 20px;
+}
+.card_stats{
+    display: flex;
+    flex-direction: column;
+    
+}
+h2{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.card_stats span{
+    font-size: 12px;
+    color: var(--Dark-grayish-blue); 
+    font-weight: 400;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width: 1440px){
+    .bg-bottom {
+        position: absolute;
+        bottom: -525px;
+        right: -250px;
+      }
+      
+    .bg-top {
+        position: absolute;
+        top: -523px;
+        left: -270px;
+    }
+    .card{
+        width: 400px;
+     }
+    
+    .foto{
+         top: 100px;
+        left: 140px;    
+     }
+}

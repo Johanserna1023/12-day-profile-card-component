@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Johan Serna Vargas" />
+    <meta name="description" content="Profile Card Component" />
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Profile Card Component</title>
+  </head>
+
+  <body>
+    <main class="container">
+        <img src="./images/bg-pattern-top.svg" alt="image top" class="bg-top">
+        <img src="./images/bg-pattern-bottom.svg" alt="image bottom" class="bg-bottom">
+      <div class="card">
+        <div class="card_header"></div>
+        <div class="card_body">
+            <img src="images/JohanSerna.png" alt="Foto Johan Serna" class="foto">
+            <h1>Johan Serna <span class="age">38</span> </h1> 
+            <span class="location">Medellin - Colombia</span>
+        </div>
+
+        <div class="card_footer">
+            <div class="card_stats">
+                <h2>80k</h2> <span>Followers</span>
+            </div>
+            <div class="card_stats">
+                <h2>803k</h2> <span>Likes</span>
+            </div>
+            <div class="card_stats">
+                <h2>1.4k</h2><span>Photos</span>
+            </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
